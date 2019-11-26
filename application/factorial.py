@@ -4,9 +4,7 @@ def factorial(number):
         return number
     else:
         for i in range(1,count):
-            print ("i is: " ,i)
             number *= i
-            print (number)
         return number
 def reverse_factorial(number):
     count = number
@@ -15,7 +13,6 @@ def reverse_factorial(number):
     else:
         while number > 1:
             for i in range(1,(count+1)):
-                print ("i is: ", i)
                 number /=i
                 if number ==1:
                     return i
