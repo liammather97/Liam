@@ -1,0 +1,11 @@
+
+pipeline{
+	    agent any
+        stages{ 
+            stage('Test-Run'){
+                        steps{
+                            sh "python3 -m pytest tests/factorial_test.py"
+                        }
+                }
+        }
+}
