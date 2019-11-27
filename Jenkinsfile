@@ -1,8 +1,8 @@
 
 pipeline{
-        agent any
+	    agent any
         stages{ 
-		    stage('Test-Run'){
+            stage('Test-Run'){
                         steps{
                             sh "tests/count_test.py"
                         }
